@@ -1,0 +1,17 @@
+# Neural Networks 
+
+[PART- 1](http://peterroelants.github.io/posts/neural_network_implementation_part01/)
+
+### Linear Regression
+Simplest neural network possible: a 1 input 1 output linear regression model that has the goal to predict the target value $$t$$ from the input value $$x$$.
+The network is defined as having an input $$x$$ which gets transformed by the weight $$w$$ to generate the output $$y$$ by the formula $$y=xw$$, ($$y=xw + c$$) (**Linear activation function at input**), and where $$y$$ needs to approximate the targets $$t$$ as good as possible as defined by a cost function.
+
+[![N|Solid](https://raw.githubusercontent.com/peterroelants/peterroelants.github.io/master/notebooks/neural_net_implementation/img/SimpleANN01.png)]()
+
+In general, a neural network will have
+  - Multiple layers
+  - Non-linear activation functions
+  - A bias for each node 
+
+In above example, we have only one layer with one weight parameter $$w$$. No activation function on output and no bias.  
+In simple linear regression the parameter $$w$$ and bias are typically combined into the parameter vector $$\beta$$ where bias is the y-intercept and $$w$$ is the slope of the regression line. In linear regression, these parameters are typically fitted via the [least squares method](http://s-mat-pcs.oulu.fi/~mpa/matreng/ematr5_5.htm).
